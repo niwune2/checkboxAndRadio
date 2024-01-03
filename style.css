@@ -1,0 +1,68 @@
+body {
+    background-color: #292929;
+    color: #c8c8c8;
+    display: flex;
+    justify-content: center;
+    /* 中央寄せに変更 */
+    flex-wrap: wrap;
+    /* 必要に応じて折り返し */
+}
+
+.containerCheckbox,
+.containerRadio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0px;
+    /* コンテナ間のスペースを調整 */
+}
+
+#addRadioList,
+#addCheckboxList,
+#addRadioGroup,
+#addCheckboxGroup {
+    width: auto;
+    margin: 5px auto;
+    text-align: center;
+    display: block;
+}
+
+#radioNumber,
+#checkboxNumber {
+    width: 50px;
+    margin: 5px auto;
+    display: block;
+}
+
+#radioList,
+#checkboxList {
+    border: 1px solid black;
+    margin: 2px;
+}
+
+.radioContainer,
+.checkboxContainer {
+    border: 1px solid rgb(170, 170, 170);
+    margin: 2px;
+    padding: 5px;
+    min-height: 50px;
+    /* 各リストの最小の高さ */
+}
+
+.checkboxContainer {
+    background-color: rgba(200, 100, 100, 1);
+    width: 200px;
+    max-width: 200px;
+}
+
+.radioContainer {
+    background-color: rgba(100, 100, 200, 1);
+    width: 200px;
+    max-width: 200px;
+}
+
+.checkboxContainer p,
+.radioContainer p {
+    text-align: center;
+}

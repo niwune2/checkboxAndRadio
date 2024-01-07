@@ -9,11 +9,10 @@
 <body>
     <div class="containerRadio">
         <div class="radioContainer">
-            <h3>Radio Container</h3>
+            <h3>Radio button Container</h3>
             <input type="number" id="radioNumber" min="1" value="1">
             <input type="button" value="Add Group" id="addRadioGroup">
             <div id="radioList"></div>
-            <input type="button" value="Add List" id="addRadioList">
         </div>
     </div>
 
@@ -23,9 +22,17 @@
             <input type="number" id="checkboxNumber" min="1" value="1">
             <input type="button" value="Add Group" id="addCheckboxGroup">
             <div id="checkboxList"></div>
-            <input type="button" value="Add List" id="addCheckboxList">
         </div>
     </div>
+
+    <ol>
+        <li>ラジオボタンまたはチェックボックスを生成したい数を入力します。</li>
+        <li>「Add Group」ボタンをクリックして、新しいラジオボタンまたはチェックボックスのグループを作成します。</li>
+        <li>各ラジオボタンまたはチェックボックスの横にあるラベルをクリックすると、そのラベル名を編集できます。<br>名前を変更した後、入力フィールドの外をクリックすると、変更が保存されます。</li>
+        <li>生成されたグループは、視覚的に区別するために枠で囲まれます。</li>
+        <li>グループ内のラジオボタンまたはチェックボックスの数を増減させたい場合、<br>グループの横にある「+」または「-」ボタンを使用します。</li>
+    </ol>
+
     <script src="script.js"></script>
 </body>
 </html>

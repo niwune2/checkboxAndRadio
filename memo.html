@@ -81,6 +81,24 @@
 <li><a href="#gpt4-advices">GPT4 Advices</a>
 <ul>
 <li><a href="#item--%E3%81%A8%E3%81%AF"><code>(item = {})</code>とは？</a></li>
+<li><a href="#border%E3%81%A7%E5%9B%B2%E3%82%80"><code>border</code>で囲む</a></li>
+<li><a href="#%E8%A9%95%E4%BE%A1add-group%E3%81%A7%E3%83%AA%E3%82%B9%E3%83%88%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B%E3%82%B3%E3%83%BC%E3%83%89">[評価]&quot;Add Group&quot;でリストを追加するコード</a>
+<ul>
+<li><a href="#%E8%89%AF%E3%81%84%E7%82%B9">良い点</a></li>
+<li><a href="#%E6%94%B9%E5%96%84%E7%82%B9">改善点</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E8%BF%BD%E5%8A%A0%E3%81%AE%E6%A9%9F%E8%83%BD%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%82%A2%E3%83%89%E3%83%90%E3%82%A4%E3%82%B9">追加の機能についてのアドバイス</a>
+<ul>
+<li><a href="#%E5%AE%9F%E8%A3%85%E4%BE%8B">実装例</a></li>
+</ul>
+</li>
+<li><a href="#fieldset%E3%81%A8%E3%81%AF"><code>&lt;fieldset&gt;</code>とは</a>
+<ul>
+<li><a href="#%E7%89%B9%E5%BE%B4">特徴</a></li>
+<li><a href="#%E4%BD%BF%E3%81%84%E6%96%B9">使い方</a></li>
 </ul>
 </li>
 </ul>
@@ -108,19 +126,19 @@
 <li>
 <p>UI</p>
 <ul class="contains-task-list">
-<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-4662385"><label class="task-list-item-label" for="task-item-4662385"> コンテナ上部にリスト要素の個数選択とグループ名入力欄とAddボタン</label></li>
-<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-1010320"><label class="task-list-item-label" for="task-item-1010320"> グループ名の後ろには連番を付与する(1から)</label></li>
-<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-4835825"><label class="task-list-item-label" for="task-item-4835825"> グループ内の個々の要素の名前は変更可能なテキストフィールドに</label>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-9235568"><label class="task-list-item-label" for="task-item-9235568"> コンテナ上部にリスト要素の個数選択とグループ名入力欄とAddボタン</label></li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-2286936"><label class="task-list-item-label" for="task-item-2286936"> グループ名の後ろには連番を付与する(1から)</label></li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-5801182"><label class="task-list-item-label" for="task-item-5801182"> グループ内の個々の要素の名前は変更可能なテキストフィールドに</label>
 <ul class="contains-task-list">
-<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-5785193"> 文字列をクリックすると<code>fillText</code>から<code>input</code><label class="task-list-item-label" for="task-item-5785193"> 文字列をクリックすると`fillText`から`input`に変化する</label></li>
-<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-7627948"><label class="task-list-item-label" for="task-item-7627948"> フォーカスが外れると確定する</label></li>
-<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-3002908"> グループは<code>border</code><label class="task-list-item-label" for="task-item-3002908"> グループは`border`で括る</label></li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-2543792"> 文字列をクリックすると<code>fillText</code>から<code>input</code><label class="task-list-item-label" for="task-item-2543792"> 文字列をクリックすると`fillText`から`input`に変化する</label></li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-2254160"><label class="task-list-item-label" for="task-item-2254160"> フォーカスが外れると確定する</label></li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-3099777"> グループは<code>border</code><label class="task-list-item-label" for="task-item-3099777"> グループは`border`で括る</label></li>
 </ul>
 </li>
-<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-1237292"><label class="task-list-item-label" for="task-item-1237292"> 生成後に個数を変更可能にする</label>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-98251"><label class="task-list-item-label" for="task-item-98251"> 生成後に個数を変更可能にする</label>
 <ul class="contains-task-list">
-<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-4546187"><label class="task-list-item-label" for="task-item-4546187"> グループを生成するごとに右にボタンを縦配置(+,-)</label></li>
-<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-9444047"><label class="task-list-item-label" for="task-item-9444047"> 増加分の名前はグループ名+連番</label></li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-632465"><label class="task-list-item-label" for="task-item-632465"> グループを生成するごとに右にボタンを縦配置(+,-)</label></li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox" id="task-item-3571371"><label class="task-list-item-label" for="task-item-3571371"> 増加分の名前はグループ名+連番</label></li>
 </ul>
 </li>
 </ul>
@@ -198,6 +216,252 @@
 <li>もし <code>item</code> がプロパティとして <code>id</code> や <code>label</code> を持っていた場合、それらの値は関数内で使用されます。</li>
 </ul>
 <p>要は、このデフォルトパラメータ構文を使うことで、関数がより柔軟になり、呼び出し元が異なるコンテキスト（イベントリスナーからの呼び出しや、既存のデータからの呼び出し）でも同じ関数を安全に使用できるようになります。</p>
+<h3 id="borderで囲む"><code>border</code>で囲む</h3>
+<p>指定された数のリストを作成し、それを <code>border</code> で囲むためのコードを構築するには、以下の手順を踏む必要があります。</p>
+<ol>
+<li>
+<p><strong>リスト要素の生成</strong>:</p>
+<ul>
+<li>ユーザーが指定した数に基づいて、ラジオボタンまたはチェックボックスのリストを動的に生成します。</li>
+</ul>
+</li>
+<li>
+<p><strong>グループ化とスタイリング</strong>:</p>
+<ul>
+<li>生成されたリストをグループ化し、CSSの <code>border</code> プロパティを使用して視覚的に区切ります。</li>
+</ul>
+</li>
+</ol>
+<p>以下は、これらのステップを実装するための基本的なJavaScriptコードの例です。</p>
+<pre><code class="language-javascript"><span class="hljs-comment">// リスト要素を生成する関数</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">createListItems</span>(<span class="hljs-params">container, type, count</span>) {
+    <span class="hljs-comment">// 既存の要素をクリア</span>
+    container.<span class="hljs-property">innerHTML</span> = <span class="hljs-string">&#x27;&#x27;</span>;
+
+    <span class="hljs-comment">// 指定された数だけ要素を生成</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; count; i++) {
+        <span class="hljs-keyword">const</span> listItem = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;div&#x27;</span>);
+        listItem.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(<span class="hljs-string">&#x27;list-item&#x27;</span>);
+
+        <span class="hljs-keyword">const</span> input = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;input&#x27;</span>);
+        input.<span class="hljs-property">type</span> = type;
+
+        <span class="hljs-comment">// ここでラベルやその他の要素を追加できます</span>
+
+        listItem.<span class="hljs-title function_">appendChild</span>(input);
+        container.<span class="hljs-title function_">appendChild</span>(listItem);
+    }
+
+    <span class="hljs-comment">// グループ化のためにborderを追加</span>
+    container.<span class="hljs-property">style</span>.<span class="hljs-property">border</span> = <span class="hljs-string">&#x27;1px solid black&#x27;</span>;
+}
+
+<span class="hljs-comment">// イベントリスナー</span>
+radioNumberInput.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;input&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> number = <span class="hljs-built_in">parseInt</span>(radioNumberInput.<span class="hljs-property">value</span>, <span class="hljs-number">10</span>);
+    <span class="hljs-title function_">createListItems</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&#x27;radioList&#x27;</span>), <span class="hljs-string">&#x27;radio&#x27;</span>, number);
+});
+
+checkboxNumberInput.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;input&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> number = <span class="hljs-built_in">parseInt</span>(checkboxNumberInput.<span class="hljs-property">value</span>, <span class="hljs-number">10</span>);
+    <span class="hljs-title function_">createListItems</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&#x27;checkboxList&#x27;</span>), <span class="hljs-string">&#x27;checkbox&#x27;</span>, number);
+});
+</code></pre>
+<p>このコードでは、<code>createListItems</code> 関数がコンテナ要素、リストのタイプ（'radio' または 'checkbox'）、および生成する要素の数を引数として受け取り、その数だけのリスト項目を生成し、コンテナに追加します。また、リスト全体に <code>border</code> を適用してグループ化しています。</p>
+<p>この例は基本的な実装であり、必要に応じてカスタマイズを行うことができます。たとえば、リスト項目にラベルを追加する、スタイリングを調整する、などの変更を加えることが可能です。</p>
+<h3 id="評価add-groupでリストを追加するコード">[評価]&quot;Add Group&quot;でリストを追加するコード</h3>
+<pre><code class="language-js">addRadioGroup.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> number = <span class="hljs-built_in">parseInt</span>(radioNumber.<span class="hljs-property">value</span>, <span class="hljs-number">10</span>);
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; number; i++) {
+        <span class="hljs-keyword">const</span> radioItem = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;div&#x27;</span>);
+        radioItem.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(<span class="hljs-string">&#x27;radio-item&#x27;</span>);
+        radioItem.<span class="hljs-property">id</span> = <span class="hljs-string">`radioItem<span class="hljs-subst">${numberOfRadioList}</span>`</span>;
+        radioItem.<span class="hljs-property">name</span> = <span class="hljs-string">&#x27;radioItem&#x27;</span>;
+
+        <span class="hljs-keyword">const</span> radioInput = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;input&#x27;</span>);
+        radioInput.<span class="hljs-property">type</span> = <span class="hljs-string">&#x27;radio&#x27;</span>;
+        radioInput.<span class="hljs-property">id</span> = <span class="hljs-string">`radio<span class="hljs-subst">${numberOfRadioList}</span>`</span>;
+        radioInput.<span class="hljs-property">name</span> = <span class="hljs-string">&#x27;radio&#x27;</span>;
+
+        <span class="hljs-keyword">const</span> radioLabel = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;label&#x27;</span>);
+        radioLabel.<span class="hljs-property">htmlFor</span> = <span class="hljs-string">`radio<span class="hljs-subst">${numberOfRadioList}</span>`</span>;
+        radioLabel.<span class="hljs-property">textContent</span> = <span class="hljs-string">`Option <span class="hljs-subst">${numberOfRadioList}</span>`</span>;
+
+        radioItem.<span class="hljs-title function_">appendChild</span>(radioInput);
+        radioItem.<span class="hljs-title function_">appendChild</span>(radioLabel);
+        radioListContainer.<span class="hljs-title function_">appendChild</span>(radioItem);
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`add radio <span class="hljs-subst">${numberOfRadioList}</span>`</span>);
+        numberOfRadioList++;
+    }
+});
+</code></pre>
+<p>提供されたJavaScriptコードを確認しました。このコードは、&quot;Add Group&quot;ボタンをクリックすると指定された数だけラジオボタンのリストを生成するという目的を達成しています。コードの評価を以下に示します。</p>
+<h4 id="良い点">良い点</h4>
+<ol>
+<li>
+<p><strong>明瞭なロジック</strong>:</p>
+<ul>
+<li>コードは非常に直感的で、その動作が理解しやすいです。</li>
+</ul>
+</li>
+<li>
+<p><strong>動的な要素生成</strong>:</p>
+<ul>
+<li>指定された数に基づいてラジオボタンの要素を動的に生成しています。</li>
+</ul>
+</li>
+<li>
+<p><strong>IDの一意性</strong>:</p>
+<ul>
+<li>生成される各ラジオボタンには一意のIDが与えられており、これによりHTML内で要素を特定しやすくなっています。</li>
+</ul>
+</li>
+</ol>
+<h4 id="改善点">改善点</h4>
+<ol>
+<li>
+<p><strong>IDの命名</strong>:</p>
+<ul>
+<li><code>radioItem${numberOfRadioList}</code> というIDは一意ですが、ページ内で同じタイプの別のリストがある場合、IDが重複する可能性があります。これを防ぐために、より特定的な命名規則を検討すると良いでしょう。</li>
+</ul>
+</li>
+<li>
+<p><strong>グループ化</strong>:</p>
+<ul>
+<li>生成される各ラジオボタンは現在個別の要素として追加されていますが、これらを意味的なグループ（例えば、<code>&lt;fieldset&gt;</code> や <code>&lt;div&gt;</code> など）で囲むと、UIの構造がより明確になります。</li>
+</ul>
+</li>
+<li>
+<p><strong>スタイリングの検討</strong>:</p>
+<ul>
+<li>各ラジオボタンのスタイルについて、CSSを使用して調整を検討すると良いでしょう。これにより、見た目の一貫性とユーザビリティが向上します。</li>
+</ul>
+</li>
+<li>
+<p><strong>エラーハンドリング</strong>:</p>
+<ul>
+<li>入力値が不正な場合（例えば、空の入力や負の値など）に対するエラーハンドリングを追加することを検討してください。</li>
+</ul>
+</li>
+<li>
+<p><strong>コードの最適化</strong>:</p>
+<ul>
+<li>現在、コード内で <code>numberOfRadioList</code> がグローバル変数として使用されています。これをローカルスコープに限定するか、別の方法で管理することを検討すると良いでしょう。</li>
+</ul>
+</li>
+</ol>
+<p>全体として、このコードは良く設計されており、指定された機能を適切に実行しています。上記の改善点を考慮することで、さらに堅牢で使いやすいコードになるでしょう。</p>
+<h2 id="追加の機能についてのアドバイス">追加の機能についてのアドバイス</h2>
+<p>指定された目標に基づいて、それぞれの機能を実装するための基本的なアプローチを説明します。</p>
+<ol>
+<li>
+<p><strong>数値に基づくリストの生成とグルーピング</strong>:</p>
+<ul>
+<li>各グループを <code>&lt;div&gt;</code> または <code>&lt;fieldset&gt;</code> で囲み、CSSを使用して <code>border</code> を適用します。</li>
+<li>ラジオボタンの <code>name</code> 属性をグループごとに一意に設定することで、同じグループ内でのみ選択が可能になります。</li>
+</ul>
+</li>
+<li>
+<p><strong>変更可能なラベル</strong>:</p>
+<ul>
+<li>ラベルをクリックするとテキストフィールドに変わるようにし、フォーカスが外れたときに変更を確定します。</li>
+<li>これには JavaScript でのイベントハンドリングが必要です。</li>
+</ul>
+</li>
+<li>
+<p><strong>+/-ボタンの追加と機能実装</strong>:</p>
+<ul>
+<li>各グループに +（増加）と -（減少）ボタンを追加します。</li>
+<li>これらのボタンにイベントリスナーを設定し、クリックするとグループ内のリスト項目の数が増減するようにします。</li>
+</ul>
+</li>
+</ol>
+<h3 id="実装例">実装例</h3>
+<p>以下は、これらの機能を実装するための簡単な例です。この例では、リストの生成とグルーピング、およびラベルの変更可能な機能に焦点を当てています。</p>
+<pre><code class="language-javascript"><span class="hljs-comment">// リストを生成しグループ化する関数</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">createRadioGroup</span>(<span class="hljs-params">number, groupName</span>) {
+    <span class="hljs-keyword">const</span> group = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;fieldset&#x27;</span>);
+    group.<span class="hljs-property">style</span>.<span class="hljs-property">border</span> = <span class="hljs-string">&#x27;1px solid black&#x27;</span>;
+    group.<span class="hljs-property">id</span> = groupName;
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; number; i++) {
+        <span class="hljs-keyword">const</span> radioItem = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;div&#x27;</span>);
+        radioItem.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(<span class="hljs-string">&#x27;radio-item&#x27;</span>);
+
+        <span class="hljs-keyword">const</span> radioInput = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;input&#x27;</span>);
+        radioInput.<span class="hljs-property">type</span> = <span class="hljs-string">&#x27;radio&#x27;</span>;
+        radioInput.<span class="hljs-property">id</span> = <span class="hljs-string">`<span class="hljs-subst">${groupName}</span>-radio<span class="hljs-subst">${i}</span>`</span>;
+        radioInput.<span class="hljs-property">name</span> = groupName;
+
+        <span class="hljs-keyword">const</span> radioLabel = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;label&#x27;</span>);
+        radioLabel.<span class="hljs-property">htmlFor</span> = <span class="hljs-string">`<span class="hljs-subst">${groupName}</span>-radio<span class="hljs-subst">${i}</span>`</span>;
+        radioLabel.<span class="hljs-property">textContent</span> = <span class="hljs-string">`Option <span class="hljs-subst">${i + <span class="hljs-number">1</span>}</span>`</span>;
+
+        <span class="hljs-comment">// ラベルをクリックしたときのイベントリスナー</span>
+        radioLabel.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+            <span class="hljs-keyword">const</span> input = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;input&#x27;</span>);
+            input.<span class="hljs-property">type</span> = <span class="hljs-string">&#x27;text&#x27;</span>;
+            input.<span class="hljs-property">value</span> = radioLabel.<span class="hljs-property">textContent</span>;
+            radioLabel.<span class="hljs-title function_">replaceWith</span>(input);
+
+            input.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;blur&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+                radioLabel.<span class="hljs-property">textContent</span> = input.<span class="hljs-property">value</span>;
+                input.<span class="hljs-title function_">replaceWith</span>(radioLabel);
+            });
+        });
+
+        radioItem.<span class="hljs-title function_">appendChild</span>(radioInput);
+        radioItem.<span class="hljs-title function_">appendChild</span>(radioLabel);
+        group.<span class="hljs-title function_">appendChild</span>(radioItem);
+    }
+
+    radioListContainer.<span class="hljs-title function_">appendChild</span>(group);
+}
+
+<span class="hljs-comment">// グループの追加ボタンのイベントリスナー</span>
+addRadioGroup.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> number = <span class="hljs-built_in">parseInt</span>(radioNumber.<span class="hljs-property">value</span>, <span class="hljs-number">10</span>);
+    <span class="hljs-title function_">createRadioGroup</span>(number, <span class="hljs-string">`radioGroup<span class="hljs-subst">${numberOfRadioGroups}</span>`</span>);
+    numberOfRadioGroups++;
+});
+</code></pre>
+<p>このコードは、指定された数のラジオボタンを含む新しいグループを生成し、そのグループ内の各ラベルをクリック可能にします。ラベルがクリックされると、テキストフィールドに置き換わり、フォーカスが外れると元のラベルに戻ります。</p>
+<p>この実装例は基本的なものであり、+/-ボタンの追加や、リスト項目の数の動的な変更など、残りの機能は追加の開発が必要です。また、CSSスタイル、エラーハンドリング、ユーザーインターフェースの改善などの面でもさらなるカスタマイズが可能です。</p>
+<h2 id="fieldsetとは"><code>&lt;fieldset&gt;</code>とは</h2>
+<p><code>&lt;fieldset&gt;</code> はHTMLの要素で、フォーム内の関連するコントロール（入力フィールド、ラジオボタン、チェックボックスなど）を論理的にグループ化するために使われます。<code>&lt;fieldset&gt;</code> 要素は、フォームの一部をセクションとして区切り、それらを視覚的にグループ化する役割を持ちます。これにより、フォームがより構造化され、ユーザーにとって理解しやすくなります。</p>
+<h3 id="特徴">特徴</h3>
+<ol>
+<li>
+<p><strong>視覚的なグルーピング</strong>:</p>
+<ul>
+<li><code>&lt;fieldset&gt;</code> は通常、ブラウザによって枠線で囲まれ、その中に含まれるフォーム要素をグループ化します。</li>
+</ul>
+</li>
+<li>
+<p><strong>アクセシビリティの向上</strong>:</p>
+<ul>
+<li><code>&lt;fieldset&gt;</code> と <code>&lt;legend&gt;</code> を組み合わせることで、スクリーンリーダーなどの支援技術に対して、フォームの各部分が何を表しているかを明確に伝えることができます。</li>
+</ul>
+</li>
+<li>
+<p><strong>フォームの構造化</strong>:</p>
+<ul>
+<li>複数のフォームコントロールをグループ化し、フォームの構造を整理することができます。</li>
+</ul>
+</li>
+</ol>
+<h3 id="使い方">使い方</h3>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>連絡先情報<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;email&quot;</span>&gt;</span>メールアドレス:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;email&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;phone&quot;</span>&gt;</span>電話番号:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;tel&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;phone&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;phone&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span>
+</code></pre>
+<p>この例では、メールアドレスと電話番号の入力フィールドを含むフォームのセクションを <code>fieldset</code> でグループ化しています。<code>legend</code> 要素は、<code>fieldset</code> 内のグループのタイトルまたは説明を提供します。</p>
+<p><code>&lt;fieldset&gt;</code> 要素は、フォームの部分を明確に区切り、ユーザーが各セクションの目的を理解しやすくするための有用な方法です。</p>
 
         <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
         

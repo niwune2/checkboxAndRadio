@@ -35,12 +35,6 @@ body {
     display: block;
 }
 
-#radioList,
-#checkboxList {
-    border: 1px solid black;
-    margin: 2px;
-}
-
 .radioContainer,
 .checkboxContainer {
     border: 1px solid rgb(170, 170, 170);
@@ -48,21 +42,21 @@ body {
     padding: 5px;
     min-height: 50px;
     /* 各リストの最小の高さ */
+    width: 200px;
+    max-width: 200px;
 }
 
 .checkboxContainer {
     background-color: rgba(200, 100, 100, 1);
-    width: 200px;
-    max-width: 200px;
 }
 
 .radioContainer {
     background-color: rgba(100, 100, 200, 1);
-    width: 200px;
-    max-width: 200px;
 }
 
 .checkboxContainer p,
-.radioContainer p {
+.radioContainer p,
+.checkboxContainer h3,
+.radioContainer h3 {
     text-align: center;
 }

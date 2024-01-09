@@ -2,34 +2,13 @@ const checkboxListContainer = document.getElementById("checkboxList");
 const checkboxNumber = document.getElementById('checkboxNumber');
 const radioListContainer = document.getElementById("radioList");
 const radioNumber = document.getElementById('radioNumber');
-// const addRadioList = document.getElementById('addRadioList');
-// const addCheckboxList = document.getElementById('addCheckboxList');
 const addRadioGroup = document.getElementById('addRadioGroup');
 const addCheckboxGroup = document.getElementById('addCheckboxGroup');
-
-// addRadioList.addEventListener('click', addRadioItem);
-// addCheckboxList.addEventListener('click', addCheckboxItem);
-
-// const radioData = [
-//     { id: "radio1", label: "Option 1" },
-//     { id: "radio2", label: "Option 2" },
-//     { id: "radio3", label: "Option 3" },
-// ];
-
-// const checkboxData = [
-//     { id: "check1", label: "Check 1" },
-//     { id: "check2", label: "Check 2" },
-//     { id: "check3", label: "Check 3" },
-// ];
 
 let numberOfRadioList = 0;
 let numberOfCheckboxList = 0;
 let numberOfRadioGroups = 0;
 let numberOfCheckboxGroups = 0;
-
-// Initial list additions
-// radioData.forEach(item => { addRadioItem(item); });
-// checkboxData.forEach(item => { addCheckboxItem(item); });
 
 function addRadioItem(item = {}) {
     // Check if radio button IDs are provided.
@@ -71,39 +50,7 @@ function createFormItem(type, id, label) {
     return formItem;
 }
 
-// リスト要素を生成する関数
-// <div class="list-item"><input type="radio"></div>
-// このinputにvalue="(任意の名前)"とid='radio(/check)n'を加える
-
-// この関数をcheckとradioに対応させる　-> イベリスに記述する
-/** <div id="radioList">
- *      <div class="radio-item">
- *          <input type="radio" id="radio1" name="radio">
- *          <label for="radio1">Option 1</label>
- * </div>
- *...
- * <div class="radio(/check)-item">
- * <div id="checkboxList">
- *      <div class="checkbox-item">
- *      <input type="checkbox" id="check1" name="checkbox">
- *      <label for="check1">Check 1</label>
- * </div>
-*/
-
-// #radioListと#checkBoxListをnumberを追記してcreateする
 function createListItems(container, type, count) {
-    // 既存の要素をクリア
-    // 0.'Add Group'を押すとinputの数値を読み取る
-    // 1. #radioList(n-3)をcreateして.radioContainerにappendする
-    // 2. .radio-itemを入力分create
-    // 2-1. .radio-itemにidとnameを付与する
-    // 3. <input type="radio" id="radio(n)" name="radio">をcreateする
-    // 4. <label for="radio4">Radio 4</label>をcreate
-    // 5. 3-4を2にappend(2-4は入力分create)
-    // 6. styleを2に適用する
-
-    // container.innerHTML = '';
-
     // 指定された数だけ要素を生成
     for (let i = 0; i < count; i++) {
         const listItem = document.createElement('div');
@@ -111,8 +58,6 @@ function createListItems(container, type, count) {
 
         const input = document.createElement('input');
         input.type = type;
-
-        // ここでラベルやその他の要素を追加できます
 
         listItem.appendChild(input);
         container.appendChild(listItem);
